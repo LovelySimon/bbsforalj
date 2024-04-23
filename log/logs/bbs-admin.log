@@ -1,0 +1,442 @@
+2024-04-17 13:01:29 [INFO][com.alj.BbsAdminApplication][logStarting][55]-> Starting BbsAdminApplication using Java 1.8.0_281 on LAPTOP-BLDFP1U1 with PID 35412 (D:\java\bbsforalj\bbs-backend\bbs-admin\target\classes started by alj in D:\java\bbsforalj)
+2024-04-17 13:01:29 [INFO][com.alj.BbsAdminApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2024-04-17 13:01:30 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'emailCodeMapper' and 'com.alj.mapper.EmailCodeMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:01:30 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumArticleAttachmentDownloadMapper' and 'com.alj.mapper.ForumArticleAttachmentDownloadMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:01:30 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumArticleAttachmentMapper' and 'com.alj.mapper.ForumArticleAttachmentMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:01:30 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumArticleMapper' and 'com.alj.mapper.ForumArticleMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:01:30 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumBoardMapper' and 'com.alj.mapper.ForumBoardMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:01:30 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumCommentMapper' and 'com.alj.mapper.ForumCommentMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:01:30 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'likeRecordMapper' and 'com.alj.mapper.LikeRecordMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:01:30 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'sysSettingMapper' and 'com.alj.mapper.SysSettingMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:01:30 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.alj.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:01:30 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'userIntegralRecordMapper' and 'com.alj.mapper.UserIntegralRecordMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:01:30 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'userMessageMapper' and 'com.alj.mapper.UserMessageMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:01:30 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> No MyBatis mapper was found in '[com.alj.mapper]' package. Please check your configuration.
+2024-04-17 13:01:30 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 8081 (http)
+2024-04-17 13:01:30 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-8081"]
+2024-04-17 13:01:30 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2024-04-17 13:01:30 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2024-04-17 13:01:30 [WARN][org.apache.catalina.core.AprLifecycleListener][log][173]-> This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2024-04-17 13:01:30 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2024-04-17 13:01:30 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2024-04-17 13:01:30 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-04-17 13:01:30 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2024-04-17 13:01:31 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2024-04-17 13:01:31 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 1177 ms
+2024-04-17 13:01:32 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-8081"]
+2024-04-17 13:01:32 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 8081 (http) with context path '/api'
+2024-04-17 13:01:32 [INFO][com.alj.BbsAdminApplication][logStarted][61]-> Started BbsAdminApplication in 3.069 seconds (JVM running for 3.916)
+2024-04-17 13:01:32 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2024-04-17 13:01:32 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2024-04-17 13:02:23 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-17 13:02:23 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2024-04-17 13:02:23 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 1 ms
+2024-04-17 13:02:34 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:02:34 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:11:07 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/iqlAZcksrj7NaDd.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:11:07 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/kOL99fdJztTWTa1.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:11:07 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/nxUQw81IuTtUYCU.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:11:11 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/OazOPuaQnfmpJcF.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:11:11 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/8Hyca1SDrUWhBRy.jpeg,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:11:11 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/d7eGKIvOtsBUFUo.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:11:11 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/04/TtAHTxd832ACEl9.jpg,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:11:15 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/M5Apq2fXSfqQ9Lu.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:11:15 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/8nsyR6wYBFi2wBL.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:11:15 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/04/Cjnv7a8xQ4saxEt.JPG,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:13:07 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2024-04-17 13:13:07 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2024-04-17 13:13:12 [INFO][com.alj.BbsAdminApplication][logStarting][55]-> Starting BbsAdminApplication using Java 1.8.0_281 on LAPTOP-BLDFP1U1 with PID 13580 (D:\java\bbsforalj\bbs-backend\bbs-admin\target\classes started by alj in D:\java\bbsforalj)
+2024-04-17 13:13:12 [INFO][com.alj.BbsAdminApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2024-04-17 13:13:12 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'emailCodeMapper' and 'com.alj.mapper.EmailCodeMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:13:12 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumArticleAttachmentDownloadMapper' and 'com.alj.mapper.ForumArticleAttachmentDownloadMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:13:12 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumArticleAttachmentMapper' and 'com.alj.mapper.ForumArticleAttachmentMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:13:12 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumArticleMapper' and 'com.alj.mapper.ForumArticleMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:13:12 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumBoardMapper' and 'com.alj.mapper.ForumBoardMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:13:12 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumCommentMapper' and 'com.alj.mapper.ForumCommentMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:13:12 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'likeRecordMapper' and 'com.alj.mapper.LikeRecordMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:13:12 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'sysSettingMapper' and 'com.alj.mapper.SysSettingMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:13:12 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.alj.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:13:12 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'userIntegralRecordMapper' and 'com.alj.mapper.UserIntegralRecordMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:13:12 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'userMessageMapper' and 'com.alj.mapper.UserMessageMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 13:13:12 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> No MyBatis mapper was found in '[com.alj.mapper]' package. Please check your configuration.
+2024-04-17 13:13:13 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 8081 (http)
+2024-04-17 13:13:13 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-8081"]
+2024-04-17 13:13:13 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2024-04-17 13:13:13 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2024-04-17 13:13:13 [WARN][org.apache.catalina.core.AprLifecycleListener][log][173]-> This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2024-04-17 13:13:13 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2024-04-17 13:13:13 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2024-04-17 13:13:13 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-04-17 13:13:13 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2024-04-17 13:13:13 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2024-04-17 13:13:13 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 912 ms
+2024-04-17 13:13:14 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-8081"]
+2024-04-17 13:13:14 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 8081 (http) with context path '/api'
+2024-04-17 13:13:14 [INFO][com.alj.BbsAdminApplication][logStarted][61]-> Started BbsAdminApplication in 2.577 seconds (JVM running for 3.336)
+2024-04-17 13:13:14 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2024-04-17 13:13:14 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2024-04-17 13:13:24 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-17 13:13:24 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2024-04-17 13:13:24 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 0 ms
+2024-04-17 13:13:25 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:13:25 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:13:28 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/8nsyR6wYBFi2wBL.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:13:28 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/M5Apq2fXSfqQ9Lu.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:13:36 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:13:36 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:13:38 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/M5Apq2fXSfqQ9Lu.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:13:38 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/8nsyR6wYBFi2wBL.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:13:42 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/04/ovSkxuo6DnDbivT_.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:13:42 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/G6f2JlVazmYMLYP_.jpeg,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:13:47 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:13:47 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:15:39 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:15:39 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:15:49 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:15:49 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:16:01 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/04/ovSkxuo6DnDbivT_.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:16:01 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/G6f2JlVazmYMLYP_.jpeg,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:54:22 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 13:54:22 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:10:07 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/04/ovSkxuo6DnDbivT_.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:10:07 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/G6f2JlVazmYMLYP_.jpeg,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:10:10 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/G6f2JlVazmYMLYP_.jpeg,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:10:10 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/04/ovSkxuo6DnDbivT_.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:10:11 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:10:11 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:10:23 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/G6f2JlVazmYMLYP_.jpeg,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:10:23 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/04/ovSkxuo6DnDbivT_.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:10:26 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:10:26 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:27:28 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:27:28 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:27:57 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/nxUQw81IuTtUYCU.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:27:57 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/kOL99fdJztTWTa1.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:27:57 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/iqlAZcksrj7NaDd.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:27:59 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/OazOPuaQnfmpJcF.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:27:59 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/d7eGKIvOtsBUFUo.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:27:59 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/8Hyca1SDrUWhBRy.jpeg,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:28:00 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/8nsyR6wYBFi2wBL.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:28:00 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/M5Apq2fXSfqQ9Lu.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:28:01 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:28:01 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:41:26 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:41:26 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:41:30 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:41:30 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:41:41 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:41:41 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:53:05 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/kOL99fdJztTWTa1.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:53:05 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/iqlAZcksrj7NaDd.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:53:05 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/nxUQw81IuTtUYCU.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:53:06 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:53:06 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:54:00 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:54:00 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:54:06 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:54:06 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:54:08 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:54:08 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:54:53 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/kOL99fdJztTWTa1.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:54:53 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/iqlAZcksrj7NaDd.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:54:53 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/nxUQw81IuTtUYCU.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:54:55 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:54:55 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:55:40 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 14:55:40 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 15:07:50 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 15:07:50 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 15:08:27 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 15:08:27 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 15:10:03 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 15:10:03 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 15:19:28 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 15:19:28 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 15:35:34 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 15:35:34 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 15:44:35 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2024-04-17 15:44:35 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2024-04-17 15:47:34 [INFO][com.alj.BbsAdminApplication][logStarting][55]-> Starting BbsAdminApplication using Java 1.8.0_281 on LAPTOP-BLDFP1U1 with PID 35440 (D:\java\bbsforalj\bbs-backend\bbs-admin\target\classes started by alj in D:\java\bbsforalj)
+2024-04-17 15:47:34 [INFO][com.alj.BbsAdminApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2024-04-17 15:47:34 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'emailCodeMapper' and 'com.alj.mapper.EmailCodeMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 15:47:34 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumArticleAttachmentDownloadMapper' and 'com.alj.mapper.ForumArticleAttachmentDownloadMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 15:47:34 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumArticleAttachmentMapper' and 'com.alj.mapper.ForumArticleAttachmentMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 15:47:34 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumArticleMapper' and 'com.alj.mapper.ForumArticleMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 15:47:34 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumBoardMapper' and 'com.alj.mapper.ForumBoardMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 15:47:34 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumCommentMapper' and 'com.alj.mapper.ForumCommentMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 15:47:34 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'likeRecordMapper' and 'com.alj.mapper.LikeRecordMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 15:47:34 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'sysSettingMapper' and 'com.alj.mapper.SysSettingMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 15:47:34 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.alj.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 15:47:34 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'userIntegralRecordMapper' and 'com.alj.mapper.UserIntegralRecordMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 15:47:34 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'userMessageMapper' and 'com.alj.mapper.UserMessageMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 15:47:34 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> No MyBatis mapper was found in '[com.alj.mapper]' package. Please check your configuration.
+2024-04-17 15:47:35 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 8081 (http)
+2024-04-17 15:47:35 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-8081"]
+2024-04-17 15:47:35 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2024-04-17 15:47:35 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2024-04-17 15:47:35 [WARN][org.apache.catalina.core.AprLifecycleListener][log][173]-> This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2024-04-17 15:47:35 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2024-04-17 15:47:35 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2024-04-17 15:47:35 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-04-17 15:47:35 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2024-04-17 15:47:35 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2024-04-17 15:47:35 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 927 ms
+2024-04-17 15:47:36 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-8081"]
+2024-04-17 15:47:36 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 8081 (http) with context path '/api'
+2024-04-17 15:47:36 [INFO][com.alj.BbsAdminApplication][logStarted][61]-> Started BbsAdminApplication in 2.744 seconds (JVM running for 3.618)
+2024-04-17 15:47:36 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2024-04-17 15:47:36 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2024-04-17 15:48:21 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-17 15:48:21 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2024-04-17 15:48:21 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 0 ms
+2024-04-17 16:15:17 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 16:15:17 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 16:15:20 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/G6f2JlVazmYMLYP_.jpeg,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 16:15:20 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/04/ovSkxuo6DnDbivT_.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 16:36:42 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/G6f2JlVazmYMLYP_.jpeg,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 16:36:42 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/04/ovSkxuo6DnDbivT_.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 17:14:50 [WARN][com.zaxxer.hikari.pool.HikariPool][run][788]-> HikariCPDatasource - Thread starvation or clock leap detected (housekeeper delta=2m42s353ms346µs600ns).
+2024-04-17 17:18:31 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2024-04-17 17:18:31 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2024-04-17 18:48:14 [INFO][com.alj.BbsAdminApplication][logStarting][55]-> Starting BbsAdminApplication using Java 1.8.0_281 on LAPTOP-BLDFP1U1 with PID 25700 (D:\java\bbsforalj\bbs-backend\bbs-admin\target\classes started by alj in D:\java\bbsforalj)
+2024-04-17 18:48:14 [INFO][com.alj.BbsAdminApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2024-04-17 18:48:14 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'emailCodeMapper' and 'com.alj.mapper.EmailCodeMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 18:48:14 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumArticleAttachmentDownloadMapper' and 'com.alj.mapper.ForumArticleAttachmentDownloadMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 18:48:14 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumArticleAttachmentMapper' and 'com.alj.mapper.ForumArticleAttachmentMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 18:48:14 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumArticleMapper' and 'com.alj.mapper.ForumArticleMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 18:48:14 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumBoardMapper' and 'com.alj.mapper.ForumBoardMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 18:48:14 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumCommentMapper' and 'com.alj.mapper.ForumCommentMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 18:48:14 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'likeRecordMapper' and 'com.alj.mapper.LikeRecordMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 18:48:14 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'sysSettingMapper' and 'com.alj.mapper.SysSettingMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 18:48:14 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.alj.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 18:48:14 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'userIntegralRecordMapper' and 'com.alj.mapper.UserIntegralRecordMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 18:48:14 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'userMessageMapper' and 'com.alj.mapper.UserMessageMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 18:48:14 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> No MyBatis mapper was found in '[com.alj.mapper]' package. Please check your configuration.
+2024-04-17 18:48:15 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 8081 (http)
+2024-04-17 18:48:15 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-8081"]
+2024-04-17 18:48:15 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2024-04-17 18:48:15 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2024-04-17 18:48:15 [WARN][org.apache.catalina.core.AprLifecycleListener][log][173]-> This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2024-04-17 18:48:15 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2024-04-17 18:48:15 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2024-04-17 18:48:15 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-04-17 18:48:15 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2024-04-17 18:48:15 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2024-04-17 18:48:15 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 905 ms
+2024-04-17 18:48:16 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-8081"]
+2024-04-17 18:48:16 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 8081 (http) with context path '/api'
+2024-04-17 18:48:16 [INFO][com.alj.BbsAdminApplication][logStarted][61]-> Started BbsAdminApplication in 2.935 seconds (JVM running for 3.723)
+2024-04-17 18:48:16 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2024-04-17 18:48:17 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2024-04-17 18:49:19 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-04-17 18:49:19 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][525]-> Initializing Servlet 'dispatcherServlet'
+2024-04-17 18:49:19 [INFO][org.springframework.web.servlet.DispatcherServlet][initServletBean][547]-> Completed initialization in 0 ms
+2024-04-17 18:49:30 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 18:49:30 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 18:50:25 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/04/ovSkxuo6DnDbivT_.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 18:50:25 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/G6f2JlVazmYMLYP_.jpeg,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 18:50:26 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 18:50:26 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 18:53:03 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/G6f2JlVazmYMLYP_.jpeg,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 18:53:03 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/04/ovSkxuo6DnDbivT_.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 18:53:15 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 18:53:15 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 18:54:37 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/04/ovSkxuo6DnDbivT_.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 18:54:37 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/G6f2JlVazmYMLYP_.jpeg,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 18:54:40 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 18:54:40 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 18:58:46 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/04/ovSkxuo6DnDbivT_.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 18:58:46 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/G6f2JlVazmYMLYP_.jpeg,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:16:44 [WARN][com.zaxxer.hikari.pool.HikariPool][run][788]-> HikariCPDatasource - Thread starvation or clock leap detected (housekeeper delta=6m26s883ms533µs700ns).
+2024-04-17 19:17:16 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:17:16 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:21:04 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:21:04 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:28:49 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:28:49 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:33:23 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:33:23 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:33:25 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:33:25 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:33:38 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:33:38 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:34:00 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:34:00 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:36:11 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:36:11 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:36:13 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/04/ovSkxuo6DnDbivT_.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:36:13 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/G6f2JlVazmYMLYP_.jpeg,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:36:15 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:36:15 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:36:22 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/G6f2JlVazmYMLYP_.jpeg,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:36:22 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/04/ovSkxuo6DnDbivT_.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:36:32 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/2lR1QAS78RUrdX4.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:36:32 [ERROR][com.alj.controller.AGlobalExceptionHandlerController][handleException][24]-> 请求错误，请求地址http://localhost:8081/api/file/getImage/202301/qkq0V8xvwQ8pQ4m.png,错误信息:
+com.alj.exception.BusinessException: 请求参数错误
+2024-04-17 19:44:15 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2024-04-17 19:44:15 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.
+2024-04-17 20:58:12 [INFO][com.alj.BbsAdminApplication][logStarting][55]-> Starting BbsAdminApplication using Java 1.8.0_281 on LAPTOP-BLDFP1U1 with PID 11228 (D:\java\bbsforalj\bbs-backend\bbs-admin\target\classes started by alj in D:\java\bbsforalj)
+2024-04-17 20:58:12 [INFO][com.alj.BbsAdminApplication][logStartupProfileInfo][635]-> No active profile set, falling back to default profiles: default
+2024-04-17 20:58:13 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'emailCodeMapper' and 'com.alj.mapper.EmailCodeMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 20:58:13 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumArticleAttachmentDownloadMapper' and 'com.alj.mapper.ForumArticleAttachmentDownloadMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 20:58:13 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumArticleAttachmentMapper' and 'com.alj.mapper.ForumArticleAttachmentMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 20:58:13 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumArticleMapper' and 'com.alj.mapper.ForumArticleMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 20:58:13 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumBoardMapper' and 'com.alj.mapper.ForumBoardMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 20:58:13 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'forumCommentMapper' and 'com.alj.mapper.ForumCommentMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 20:58:13 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'likeRecordMapper' and 'com.alj.mapper.LikeRecordMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 20:58:13 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'sysSettingMapper' and 'com.alj.mapper.SysSettingMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 20:58:13 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'userInfoMapper' and 'com.alj.mapper.UserInfoMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 20:58:13 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'userIntegralRecordMapper' and 'com.alj.mapper.UserIntegralRecordMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 20:58:13 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> Skipping MapperFactoryBean with name 'userMessageMapper' and 'com.alj.mapper.UserMessageMapper' mapperInterface. Bean already defined with the same name!
+2024-04-17 20:58:13 [WARN][org.mybatis.spring.mapper.ClassPathMapperScanner][warn][44]-> No MyBatis mapper was found in '[com.alj.mapper]' package. Please check your configuration.
+2024-04-17 20:58:13 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][initialize][108]-> Tomcat initialized with port(s): 8081 (http)
+2024-04-17 20:58:13 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Initializing ProtocolHandler ["http-nio-8081"]
+2024-04-17 20:58:13 [INFO][org.apache.catalina.core.StandardService][log][173]-> Starting service [Tomcat]
+2024-04-17 20:58:13 [INFO][org.apache.catalina.core.StandardEngine][log][173]-> Starting Servlet engine: [Apache Tomcat/9.0.55]
+2024-04-17 20:58:13 [WARN][org.apache.catalina.core.AprLifecycleListener][log][173]-> This listener must only be nested within Server elements, but is in [TomcatEmbeddedContext].
+2024-04-17 20:58:13 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2024-04-17 20:58:13 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2024-04-17 20:58:13 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2024-04-17 20:58:13 [INFO][org.apache.catalina.core.AprLifecycleListener][log][173]-> OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2024-04-17 20:58:13 [INFO][org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/api]][log][173]-> Initializing Spring embedded WebApplicationContext
+2024-04-17 20:58:13 [INFO][org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][prepareWebApplicationContext][290]-> Root WebApplicationContext: initialization completed in 885 ms
+2024-04-17 20:58:15 [INFO][org.apache.coyote.http11.Http11NioProtocol][log][173]-> Starting ProtocolHandler ["http-nio-8081"]
+2024-04-17 20:58:15 [INFO][org.springframework.boot.web.embedded.tomcat.TomcatWebServer][start][220]-> Tomcat started on port(s): 8081 (http) with context path '/api'
+2024-04-17 20:58:15 [INFO][com.alj.BbsAdminApplication][logStarted][61]-> Started BbsAdminApplication in 2.611 seconds (JVM running for 3.384)
+2024-04-17 20:58:15 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][110]-> HikariCPDatasource - Starting...
+2024-04-17 20:58:15 [INFO][com.zaxxer.hikari.HikariDataSource][getConnection][123]-> HikariCPDatasource - Start completed.
+2024-04-17 20:58:49 [INFO][com.zaxxer.hikari.HikariDataSource][close][350]-> HikariCPDatasource - Shutdown initiated...
+2024-04-17 20:58:49 [INFO][com.zaxxer.hikari.HikariDataSource][close][352]-> HikariCPDatasource - Shutdown completed.

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.alj.mapper.ForumArticleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.alj.pojo.ForumArticle">
+        <id column="article_id" property="articleId" />
+        <result column="board_id" property="boardId" />
+        <result column="board_name" property="boardName" />
+        <result column="p_board_id" property="pBoardId" />
+        <result column="p_board_name" property="pBoardName" />
+        <result column="user_id" property="userId" />
+        <result column="nick_name" property="nickName" />
+        <result column="user_ip_address" property="userIpAddress" />
+        <result column="title" property="title" />
+        <result column="cover" property="cover" />
+        <result column="content" property="content" />
+        <result column="markdown_content" property="markdownContent" />
+        <result column="editor_type" property="editorType" />
+        <result column="summary" property="summary" />
+        <result column="post_time" property="postTime" />
+        <result column="last_update_time" property="lastUpdateTime" />
+        <result column="read_count" property="readCount" />
+        <result column="good_count" property="goodCount" />
+        <result column="comment_count" property="commentCount" />
+        <result column="top_type" property="topType" />
+        <result column="attachment_type" property="attachmentType" />
+        <result column="status" property="status" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        article_id, board_id, board_name, p_board_id, p_board_name, user_id, nick_name, user_ip_address, title, cover, content, markdown_content, editor_type, summary, post_time, last_update_time, read_count, good_count, comment_count, top_type, attachment_type, status
+    </sql>
+    <update id="updateBoardNameBatch">
+        update forum_article
+        <set>
+            <if test="boardType==0">
+                p_board_name=#{boardName}
+            </if>
+            <if test="boardType==1">
+                board_name=#{boardName}
+            </if>
+        </set>
+        <where>
+            <if test="boardType==0">
+                p_board_id=#{boardId}
+            </if>
+            <if test="boardType==1">
+                board_id=#{boardId}
+            </if>
+        </where>
+    </update>
+
+    <update id="updateArticleByUserId">
+        update forum_article
+        set status=#{status}
+        where user_id = #{userId}
+    </update>
+
+
+</mapper>
