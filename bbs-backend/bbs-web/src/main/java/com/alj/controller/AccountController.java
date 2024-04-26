@@ -112,7 +112,6 @@ public class AccountController extends ABaseController {
 
     }
 
-
     /**
      * @description: 获取登录信息
      * @author alj
