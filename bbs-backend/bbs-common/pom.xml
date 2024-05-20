@@ -167,5 +167,11 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- Mahout Math dependency for operations and algebra -->
+        <dependency>
+            <groupId>org.apache.mahout</groupId>
+            <artifactId>mahout-math</artifactId>
+            <version>0.13.0</version> <!-- 使用最新版本或适合你项目的版本 -->
+        </dependency>
     </dependencies>
 </project>

@@ -108,13 +108,6 @@ public class ForumArticleController extends ABaseController {
         }
         return getSuccessResponseVO(detailVO);
     }
-    @RequestMapping("/Like")
-    public ResponseVO Like(HttpSession session,String articleId){
-        SessionWebloginDto sessionWebloginDto=(SessionWebloginDto) session.getAttribute("session_key");
-        likeRecordService.dolike(articleId,sessionWebloginDto.getUserId(),sessionWebloginDto.getNickName(),0);
-        return getSuccessResponseVO(null);
-    }
-
     /**
      * @description: 展示板块信息，非管理员和管理员板块有差异
      * @author alj
@@ -224,6 +217,13 @@ public class ForumArticleController extends ABaseController {
         forumArticle.setSummary(summary);
         forumArticleService.updateArticle(webloginDto.getAdmin(),forumArticle,cover);
         return getSuccessResponseVO(forumArticle.getArticleId());
+    }
+
+    @RequestMapping("/Like")
+    public ResponseVO Like(HttpSession session,String articleId){
+        SessionWebloginDto sessionWebloginDto=(SessionWebloginDto) session.getAttribute("session_key");
+        likeRecordService.dolike(articleId,sessionWebloginDto.getUserId(),sessionWebloginDto.getNickName(),0);
+        return getSuccessResponseVO(null);
     }
 
     @RequestMapping("/search")

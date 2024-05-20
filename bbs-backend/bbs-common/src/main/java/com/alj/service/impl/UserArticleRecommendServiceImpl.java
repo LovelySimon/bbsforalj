@@ -22,6 +22,7 @@ import org.apache.mahout.cf.taste.impl.model.GenericPreference;
 import org.apache.mahout.cf.taste.impl.model.GenericUserPreferenceArray;
 import org.apache.mahout.cf.taste.impl.neighborhood.NearestNUserNeighborhood;
 import org.apache.mahout.cf.taste.impl.recommender.GenericUserBasedRecommender;
+import org.apache.mahout.cf.taste.impl.similarity.PearsonCorrelationSimilarity;
 import org.apache.mahout.cf.taste.impl.similarity.UncenteredCosineSimilarity;
 import org.apache.mahout.cf.taste.model.DataModel;
 import org.apache.mahout.cf.taste.model.Preference;
@@ -64,6 +65,7 @@ public class UserArticleRecommendServiceImpl extends ServiceImpl<UserArticleReco
     public void calAllUserPreference() {
         List<UserInfo> userList=userInfoMapper.selectList(new QueryWrapper<>());
         for (UserInfo user:userList){
+            System.out.println("处理用户ID: " + user.getUserId());
             List<LikeRecord> likelist = this.likeRecordMapper.selectList(new QueryWrapper<LikeRecord>().eq("user_id",user.getUserId()));
             for (LikeRecord likeRecord:likelist){
                 if (likeRecord.getObjectId().length()<6){
@@ -88,6 +90,10 @@ public class UserArticleRecommendServiceImpl extends ServiceImpl<UserArticleReco
                 }
             }
         }
+        List<UserArticleRecommend> allUserRecommendations = userArticleRecommendMapper.selectList(new QueryWrapper<>());
+        for (UserArticleRecommend recommendation : allUserRecommendations) {
+            System.out.println("UserID: " + recommendation.getUserId() + ", ArticleID: " + recommendation.getArticleId() + ", Value: " + recommendation.getValue());
+        }
     }
 
 
@@ -106,6 +112,7 @@ public class UserArticleRecommendServiceImpl extends ServiceImpl<UserArticleReco
         for (UserArticleRecommend userPreference : userArticleRecommends) {
             long userId = Long.parseLong(userPreference.getUserId());  // 假设用户ID已经是长整型或可直接转换
             long articleId = articleIdToLong.getOrDefault(userPreference.getArticleId(), -1L);
+            if (articleId == -1L) continue;
             float value = userPreference.getValue();
 
             // 按用户ID将偏好添加到对应的列表中
@@ -121,7 +128,7 @@ public class UserArticleRecommendServiceImpl extends ServiceImpl<UserArticleReco
                 fastByIdMap.put(entry.getKey(), prefArray);
             }
         }
-
+        System.out.println("创建数据模型，用户数量: " + userPreferencesMap.size());
         return new GenericDataModel(fastByIdMap);
     }
 
@@ -133,6 +140,8 @@ public class UserArticleRecommendServiceImpl extends ServiceImpl<UserArticleReco
      */
     @Override
     public List<String> recommend(String userId) throws TasteException {
+        calAllUserPreference();
+        System.out.println("推荐处理的用户ID: " + userId);
         List<UserArticleRecommend> userList = userArticleRecommendMapper.selectList(new QueryWrapper<UserArticleRecommend>());
         Map<String, Long> articleIdToLong = new HashMap<>();
         Map<Long, String> longToArticleId = new HashMap<>();
@@ -149,15 +158,16 @@ public class UserArticleRecommendServiceImpl extends ServiceImpl<UserArticleReco
         DataModel dataModel = this.createDataModelWithMapping(userList, articleIdToLong);
 
         // 其他推荐系统设置
-        UserSimilarity similarity = new UncenteredCosineSimilarity(dataModel);
-        UserNeighborhood userNeighborhood = new NearestNUserNeighborhood(2, similarity, dataModel);
+        UserSimilarity similarity = new PearsonCorrelationSimilarity(dataModel);
+        UserNeighborhood userNeighborhood = new NearestNUserNeighborhood(1, similarity, dataModel);
         Recommender recommender = new GenericUserBasedRecommender(dataModel, userNeighborhood, similarity);
 
         // 推荐文章
-        List<RecommendedItem> recommendedItems = recommender.recommend(Long.parseLong(userId), 5);
+        List<RecommendedItem> recommendedItems = recommender.recommend(Long.parseLong(userId), 1  );
         List<String> itemIds = recommendedItems.stream()
                 .map(item -> longToArticleId.get(item.getItemID()))
                 .collect(Collectors.toList());
+        System.out.println(itemIds);
         return itemIds;
     }
 
@@ -212,14 +222,13 @@ public class UserArticleRecommendServiceImpl extends ServiceImpl<UserArticleReco
 
     public IPage<ForumArticle> getRecommend(String userId, int currentPage, int pageSize) throws TasteException {
         List<String> articleIds = userArticleRecommendService.recommend(userId);
-        if (articleIds.isEmpty()) {
-            return new Page<ForumArticle>();
-        }
         // 利用MyBatis-Plus的Page类来处理分页
         Page<ForumArticle> page = new Page<>(currentPage, pageSize);
-
         // 查询条件
         QueryWrapper<ForumArticle> queryWrapper = new QueryWrapper<>();
+        if (articleIds.isEmpty()) {
+            return forumArticleMapper.selectPage(page,queryWrapper);
+        }
         queryWrapper.in("article_id", articleIds);
         // 确保按照推荐列表的顺序返回
         queryWrapper.orderBy(true, true, "field(article_id," + String.join(",", articleIds) + ")");
